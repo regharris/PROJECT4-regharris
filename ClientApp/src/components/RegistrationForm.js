@@ -86,7 +86,7 @@ class RegistrationForm extends React.Component {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="productCategory">How Many</Label>
+          <Label for="productCategory">Category</Label>
           <Input
             type="text"
             name="productCategory"
@@ -99,7 +99,7 @@ class RegistrationForm extends React.Component {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="category">Category</Label>
+          <Label for="category">Description</Label>
           <Input
             type="text"
             name="category"
@@ -112,12 +112,14 @@ class RegistrationForm extends React.Component {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="des_box">Description</Label>
+          <Label for="productImage">Picture</Label>
           <Input
             type="text"
-            name="des_box"
+            name="productImage"
             onChange={this.onChange}
-            value={this.state.des_box === null ? "" : this.state.des_box}
+            value={
+              this.state.productImage === null ? "" : this.state.productImage
+            }
             placeholder="./image/"
           />
         </FormGroup>

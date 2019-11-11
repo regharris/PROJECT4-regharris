@@ -4,7 +4,7 @@ import RegistrationModal from "./RegistrationModal";
 import { USERS_API_URL } from "../Constants/index";
 class DataTable extends Component {
   deleteItem = id => {
-    let confirmDeletion = window.confirm("Do you really wish to delete it?");
+    let confirmDeletion = window.confirm("Delete this item?");
     if (confirmDeletion) {
       fetch(`${USERS_API_URL}/${id}`, {
         method: "delete",
@@ -26,9 +26,9 @@ class DataTable extends Component {
           <tr>
             <th>Id</th>
             <th>Product</th>
-            <th>Type</th>
             <th>Category</th>
             <th>Description</th>
+            <th>Picture</th>
             <th style={{ textAlign: "center" }}>Actions</th>
           </tr>
         </thead>
@@ -46,7 +46,14 @@ class DataTable extends Component {
                 <td>{item.productName}</td>
                 <td>{item.productCategory}</td>
                 <td>{item.productDescription}</td>
-                <td>{item.productImage}</td>
+                <td>
+                  <img
+                    src={item.productImage}
+                    alt="product"
+                    height="100px"
+                    width="100px"
+                  ></img>
+                </td>
                 <td align="center">
                   <div>
                     <RegistrationModal

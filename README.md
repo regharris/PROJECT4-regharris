@@ -54,7 +54,7 @@ This project is a challenge that connects a mysql database to a react UI using C
 
 --shows deleted "patrick" product
 
-## ClientApp/images/delete-part2.png
+![DELETE](./ClientApp/images/delete-part2.png)
 
 //////////////////////////////////////////////////////////////////////////////
 

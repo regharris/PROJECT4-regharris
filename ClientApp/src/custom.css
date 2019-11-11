@@ -17,3 +17,7 @@ div {
   margin: 0px;
   padding: 0px;
 }
+body {
+  background-color: lightblue;
+  color: black;
+}
